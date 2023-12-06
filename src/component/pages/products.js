@@ -27,7 +27,7 @@ export default function Products() {
         {
         Products.map((product) =>(
             <div className='card w-[280px] xl:w-[18.229vw] p-10 mx-auto' key={product.id}>
-                <img className="ml-14  min-h-[100px] xl:min-h-[5.208vw]" src={product.image}/>
+                <img className="ml-14  min-h-[100px] xl:min-h-[5.208vw]" src={product.image} alt="productsimage"/>
                 <h4 className='font-medium min-h-[120px] xl:min-h-[6.250vw] mt-4 text-center'>{product.title}</h4>
                 <h4 className='font-medium text-[#00FF00] text-center mb-4'>${product.price}</h4>
                 <button onClick={()=>handleAdd(product)} className='text-[#fff] bg-[#A020F0] rounded p-2'>Add To Cart</button>

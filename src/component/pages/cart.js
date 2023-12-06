@@ -14,7 +14,7 @@ export default function Cart() {
         {
         products.map((product) =>(
             <div className='card w-[280px] xl:w-[18.229vw] p-10 mx-auto mt-10'>
-               <img className="ml-14  min-h-[100px] xl:min-h-[5.208vw]" src={product.image}/>
+               <img className="ml-14  min-h-[100px] xl:min-h-[5.208vw]" src={product.image} alt="productsimage"/>
                 <h4 className='font-medium min-h-[120px] xl:min-h-[6.250vw] mt-4'>{product.title}</h4>
                 <h4 className='font-medium text-[#00FF00] text-center mb-2'>${product.price}</h4>
                 <button onClick={()=>handleRemove(product.id)} className='text-[#fff] bg-[#A020F0] rounded p-2 text-center'>Remove</button>
