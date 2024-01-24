@@ -7,10 +7,11 @@ import Cart from './component/pages/cart'
 import Navbar from './component/navbar';
 import {Provider} from 'react-redux';
 import Store from './component/store/store'
+import Chart from './component/barchart/chart';
 function App() {
   return (
     <div className="App">
-      <Provider store={Store}>
+      {/* <Provider store={Store}>
       <BrowserRouter>
       <Navbar/>
       <Routes>
@@ -18,7 +19,9 @@ function App() {
         <Route path='/cart' element={<Cart/>}></Route>
       </Routes>
       </BrowserRouter>
-      </Provider>
+      </Provider> */}
+
+      <Chart/>
     </div>
   );
 }
